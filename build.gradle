@@ -13,7 +13,7 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'application'
 apply plugin: 'maven'
-mainClassName = "org.kaddiya.cmdgror.CommandLineGrorchestrator"
+mainClassName = "org.kaddiya.cmdgror.CommandLineGror"
 group = "org.kaddiya"
 version = "1.0.0"
 // In this section you declare where to find the dependencies of your project
@@ -37,7 +37,7 @@ configurations {
 dependencies {
     // We use the latest groovy 2.x version for building this library
     compile 'org.codehaus.groovy:groovy-all:2.4.0'
-    compile 'org.kaddiya:grorchestrator:1.0.1-SNAPSHOT'
+    compile 'org.kaddiya:grorchestrator:1.0.2-SNAPSHOT'
     // We use the awesome Spock testing and specification framework
     compile 'org.slf4j:slf4j-simple:1.6.1'
     compile 'org.slf4j:slf4j-api:1.6.1'

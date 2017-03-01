@@ -5,6 +5,7 @@ import com.google.inject.Guice
 import com.google.inject.Injector
 import groovy.transform.CompileStatic
 import groovy.util.logging.Slf4j
+import org.kaddiya.cmdgror.guice.CmdGrorModule
 import org.kaddiya.grorchestrator.deserialisers.latest.GrorProjectDeserialiserImpl
 import org.kaddiya.grorchestrator.guice.DeserialiserModule
 import org.kaddiya.grorchestrator.guice.DockerRemoteAPIModule
@@ -42,13 +43,7 @@ class CommandLineGror {
     public static void main(String[] args) {
 
         Injector grorchestratorInjector = Guice.createInjector(new GrorchestratorModule(
-                new DeserialiserModule(), new DockerRemoteAPIModule(), new HelperModule() ,new AbstractModule() {
-            @Override
-            protected void configure() {
-                bind(DockerRegistryAuthFinder).to(FileDockerRegisteryAuthFinderImpl)
-            }
-        }
-
+                new DeserialiserModule(), new DockerRemoteAPIModule(), new HelperModule() ,new CmdGrorModule()
         ))
 
 
