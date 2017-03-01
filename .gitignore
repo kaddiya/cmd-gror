@@ -15,8 +15,5 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
-*.ipr
-*.iws
 .idea/
-*.iml
 v1.0.0_gror.json
