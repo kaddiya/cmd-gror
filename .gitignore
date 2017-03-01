@@ -9,6 +9,8 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
-
+*.iml
+*.ipr
+*.iws
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
